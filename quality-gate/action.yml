@@ -52,11 +52,11 @@ runs:
         echo "Minimum Percentage required is : $MIN_PERCENTAGE "
         $PASSED_TESTS = [int]${PASSED_TESTS}
         Write-Output "Passed Tests: $PASSED_TESTS"
-        $FAILED_TESTS = [int]$FAILED_TESTS
+        $FAILED_TESTS = [int]${FAILED_TESTS}
         Write-Output "Failed Tests: $FAILED_TESTS"
-        $SKIPPED_TESTS = [int]$SKIPPED_TESTS
+        $SKIPPED_TESTS = [int]${SKIPPED_TESTS}
         Write-Output "Skipped Tests: $SKIPPED_TESTS"
-        $UNKNOWN_TESTS = [int]$UNKNOWN_TESTS
+        $UNKNOWN_TESTS = [int]${UNKNOWN_TESTS}
         Write-Output "Unkown Tests: $UNKNOWN_TESTS"        
         $TOTAL_TESTS = $PASSED_TESTS + $FAILED_TESTS + $SKIPPED_TESTS + $UNKNOWN_TESTS
         Write-Output "Total Tests: $TOTAL_TESTS"
